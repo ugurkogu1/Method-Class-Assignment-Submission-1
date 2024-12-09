@@ -1,0 +1,46 @@
+MathOperation.cs
+using System;
+
+namespace ConsoleApp
+{
+     This class contains the specified method
+    class MathOperation
+    {
+         A void method that takes two integers
+        public void PerformOperation(int num1, int num2)
+        {
+             Applies a simple addition operation to the first integer
+            int result = num1 + 10;
+
+             Writes the second integer to the console
+            Console.WriteLine(Second integer  + num2);
+            Console.WriteLine(Result of operation applied to the first integer  + result);
+        }
+    }
+}
+
+
+Program.cs
+
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             Instantiate the MathOperation class
+            MathOperation mathOperation = new MathOperation();
+
+             Call the method with two numbers
+            mathOperation.PerformOperation(5, 7);
+
+             Call the method with named parameters
+            mathOperation.PerformOperation(num1 8, num2 3);
+
+             Keep the console window open
+            Console.ReadLine();
+        }
+    }
+}
